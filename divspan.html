@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            font-size:28px;
+            margin-right:40px;
+            color: brown;
+        }
+        .top{
+            width: 1400px;
+            height: 60px;
+            background-color: white;
+            margin: 0 auto;
+        }
+         #nav{
+            width: 1300px;
+            background-color: white;
+            margin: 0 auto;
+            text-align:center;
+        }
+        .nav_top{
+            font-size: 14px;
+            color: #000;
+            padding-left: 20px;
+            padding-top: 23px; 
+            display: inline-block; 
+        }
+        #nav img{
+            width:  270px;
+            height: 129px;
+        }
+        .nav_top a{
+            text-decoration: none;
+            font-family: arial;
+        }
+        .nav_top a:link{
+            color: #222 ;
+        }
+        .nav_top a:hover{
+            color:skyblue;
+            text-decoration: dotted;
+        }
+        .form{
+            width: 680px;
+            height: 80px;
+            margin: 30px auto 0;
+            border: 1px solid blue;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column; /*纵向排列（上下）*/
+            justify-content: space-between; /*上下拉开距离*/
+            
+        }
+        .form input{
+            flex:1;
+            font-size:16px;
+            padding:0 12px;
+            border:1px solid #ccc;
+            border-radius:8px 0 0 8px;
+            outline: none;
+        }
+        .form button{
+            width:110px;
+            background:#2982ff;
+            color:white;
+            border:none;
+            border-radius:0 8px 8px 0;
+            font-size:16px;
+            cursor:pointer;
+            align-self: flex-end;
+        }
+        .main{
+            width: 1200px;
+            height: 900px;
+            border:  2px solid brown;
+            margin: 0 auto;
+
+        }
+        .amain{
+            width:500px;
+            height: 50px;
+            margin: 0 auto;
+            text-align:center;
+        }
+        .hot-box{
+            width: 1000px;
+            margin: 20px auto;
+            border:1px solid #eee;
+            padding:10px;
+        }
+        .hot-title{
+            display:flex;
+            justify-content: space-between;
+            font-size:22px;
+            margin-bottom:15px;
+        }
+    .change{
+            font-size:16px;
+            color:#666;
+        }
+        .hot-container{
+            display:flex;
+            justify-content: space-between;
+        }
+        .hot-left,.hot-right{
+            width:48%;
+        }
+        .hot-item{
+            height:40px;
+            line-height:40px;/*单行文字垂直居中*/
+            font-size:18px;
+        }
+        .num{
+            margin-right:8px;
+}
+    </style>
+</head>
+<body>
+    <div class="top">
+        <span class="nav_top"><a href="../../news.html">新闻</a></span>
+        <span class="nav_top"><a href="https:www.yuanshen.com">原神</a></span>
+        <span class="nav_top"><a href="http://www.jd.com">京东</a></span>
+        <span class="nav_top"><a href="#">贴吧</a></span>
+        <span class="nav_top"><a href="#">视频</a></span>
+        <span class="nav_top"><a href="../图片.html">图片</a></span>
+        <span class="nav_top"><a href="#">网盘</a></span>
+    </div>
+    <div id="nav">
+        <img src="../../img/xida_logo.png">
+    </div>
+    <div class="form">
+        <input type="text" placeholder="请输入搜索内容">
+        <button>搜索一下</button>
+    </div>
+    <div class="amain">派蒙 - 复杂问题就找派蒙，深入思考问答更优</div>
+    <div class="main">
+        <!-- 外层大盒子：热搜整体容器 -->
+        <div class="hot-box">
+    <!-- 头部：百度热搜 换一换 -->
+    <div class="hot-title">
+        <span>锡大热搜 ></span>
+        <span class="change">换一换</span>
+    </div>
+    <!-- 里面再套一个盒子，放左右两栏 -->
+<div class="hot-container">
+    <div class="hot-left">
+        <ol>
+            <li class="hot-item hot-top">计算机二级报考提醒</li>
+            <li class="hot-item">校园食堂上新菜品</li>
+            <li class="hot-item">图书馆延长开放通知</li>
+            <li class="hot-item">锡大校园运动会开幕</li>
+            <li class="hot-item">习近平结束访美 特朗普第一时间</li>
+        </ol>
+    </div>
+    <div class="hot-right">
+        <ol start="5">
+            <li class="hot-item">中国队 第 100 金</li>
+            <li class="hot-item">王钰栋遭停赛</li>
+            <li class="hot-item">原神7.1前瞻惊现雷霆表情</li>
+            <li class="hot-item">无职转生第四季第13集拿下10.0..</li>
+            <li class="hot-item">白宫里的三张照片见证中美关系</li>
+        </ol>
+    </div>
+</div>
+    </div>
+</body>
+</html>
